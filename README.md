@@ -13,8 +13,8 @@ carried over from prior notes). It comprises two components:
 
 <br>
 
-Across full note timelines (all notes for a single patient), TRACE removes an average of **39% of text**.
-Across a 1K patient sample, TRACE removes a total of **47% of text**.
+In a random sample of 1,000 patient note histories, TRACE removes an average of **39% of text** for each patient.
+Additionally, TRACE removes a total of **47% of text** across all 435,562 in the full sample.
 
 ![TRACE Summary](assets/github2.svg)
 
