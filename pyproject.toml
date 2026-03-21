@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trace"
+version = "0.1.0"
+description = "Identifying clinical note Template Reuse And Copied Elements."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Jordan Cahoon", email = "cahoon@stanford.edu"},
+    {name = "Chloe Stanwyck", email = "chloeo@stanford.edu"},
+    {name = "Asad Aali", email = "asadaali@stanford.edu"}
+]
+classifiers = [
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = [
+    "tqdm",
+    "striprtf",
+     "pandas",
+    "google-cloud-bigquery",
+]
+
+[project.optional-dependencies]
+experiments = [
+    "xgboost",
+    "scikit-learn",
+    "torch",
+    "datasets",
+    "numpy", 
+    "unsloth"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["run_trace*", "zeroshot_inference*", "embeddings*"]
