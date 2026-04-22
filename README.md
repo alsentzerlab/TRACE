@@ -184,9 +184,9 @@ If you use TRACE in your research, please cite our paper:
 @article{cahoon2026trace,
     title     = {Clinical Note Bloat Reduction for Efficient LLM Use},
     author    = {Cahoon, Jordan L. and Stanwyck, Chloe and Aali, Asad and Madding, Rachel and Sun, Emma and Jiang, Yixing and Dhanasekaran, Renumathy and Alsentzer, Emily},
-    journal   = {arXiv preprint arXiv:2026.XXXXX},
+    journal   = {arXiv preprint arXiv:2026.16364},
     year      = {2026},
-    url       = {https://arxiv.org/abs/2026.XXXXX}
+    url       = {https://arxiv.org/abs/2026.16364}
 }
 ```
 
